@@ -1,232 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LibRec - A Java Library for Recommender Systems</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<script src="js/jquery-1.11.2.min.js"></script>
-   		<!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="js/bootstrap.min.js"></script>
-    
-    	<!-- plugins -->
-		<link rel="stylesheet" type="text/css" href="css/table.css" />
-		<link rel="shortcut icon" href="images/network.ico" />
-        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Qu ShiLin</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+    <body>
+       
+        <div class="tm-header">
+            <div class="container-fluid">
+                <div class="tm-header-inner">
+                    <a href="#" class="navbar-brand tm-site-name">QSL</a>
+                    
+                    <!-- navbar -->
+                    <nav class="navbar tm-main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>                        
+                        </div>
+                        
+                    </nav>  
+
+                </div>                                  
+            </div>            
+        </div>
+
+        <div class="tm-home-img-container">
+            <img src="img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
+        </div>
+
+        <section class="tm-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+                        <h2 class="tm-gold-text tm-title">Introduction</h2>
+                        <p class="tm-subtitle">这里什么都没有，现在只是一个刚刚下载的模板，以后有空再折腾~~~~</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #1</h4>
+                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
+                            consequat mauris dapibus id. Donec
+                            scelerisque porttitor pharetra</p>
+                            <a href="#" class="tm-btn text-uppercase">Detail</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #2</h4>
+                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
+                            consequat mauris dapibus id. Donec
+                            scelerisque porttitor pharetra</p>
+                            <a href="#" class="tm-btn text-uppercase">Read More</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #3</h4>
+                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
+                            consequat mauris dapibus id. Donec
+                            scelerisque porttitor pharetra</p>
+                            <a href="#" class="tm-btn text-uppercase">Detail</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #4</h4>
+                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
+                            consequat mauris dapibus id. Donec
+                            scelerisque porttitor pharetra</p>
+                            <a href="#" class="tm-btn text-uppercase">Read More</a>    
+                        </div>  
+
+                    </div>
+                </div> <!-- row -->
+
+                <div class="row tm-margin-t-big">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="tm-2-col-left">
+                            
+                            <h3 class="tm-gold-text tm-title">Pellentesque fermentum mauris et posuere</h3>
+                            <p class="tm-margin-b-30">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
+                            <img src="img/tm-img-660x330-1.jpg" alt="Image" class="tm-margin-b-40 img-fluid">
+                            <p>
+                                Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.
+                            </p>
+                            <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis.</p>
+                            <p class="m-b-2"> Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis. Mauris id vulputate lectus, id fermentum sapien.
+                            </p>
+                            <a href="#" class="tm-btn text-uppercase">Read More</a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                        <div class="tm-2-col-right">
+
+                            <div class="tm-2-rows-md-swap">
+                                <div class="tm-overflow-auto row tm-2-rows-md-down-2">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                        <h3 class="tm-gold-text tm-title">
+                                            Categories
+                                        </h3>
+                                        <nav>
+                                            <ul class="nav">
+                                                <li><a href="#" class="tm-text-link">Tincidunt non faucibus placerat</a></li>
+                                                <li><a href="#" class="tm-text-link">Vestibulum tempor ac lectus</a></li>
+                                                <li><a href="#" class="tm-text-link">Fusce non turpis euismod</a></li>
+                                                <li><a href="#" class="tm-text-link">Nam in augue consectetur</a></li>
+                                                <li><a href="#" class="tm-text-link">Text Link Color #006699</a></li>
+                                            </ul>
+                                        </nav>    
+                                    </div> <!-- col -->
+
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-xs-m-t">
+                                        <h3 class="tm-gold-text tm-title">
+                                            Useful Links
+                                        </h3>
+                                        <nav>
+                                            <ul class="nav">
+                                                <li><a href="#" class="tm-text-link">Suspendisse sed dui nulla</a></li>
+                                                <li><a href="#" class="tm-text-link">Lorem ipsum dolor sit</a></li>
+                                                <li><a href="#" class="tm-text-link">Duiss nec purus et eros</a></li>
+                                                <li><a href="#" class="tm-text-link">Etiam pulvinar et ligula sed</a></li>
+                                                <li><a href="#" class="tm-text-link">Proin egestas eu felis et iaculis</a></li>
+                                            </ul>
+                                        </nav>    
+                                    </div> <!-- col -->
+                                </div>                        
+                                
+                                <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <h3 class="tm-gold-text tm-title tm-margin-b-30">Related Posts</h3>
+                                        <div class="media tm-related-post">
+                                          <div class="media-left media-middle">
+                                            <a href="#">
+                                              <img class="media-object" src="img/tm-img-240x120-1.jpg" alt="Generic placeholder image">
+                                            </a>
+                                          </div>
+                                          <div class="media-body">
+                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
+                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
+                                          </div>
+                                        </div>
+                                        <div class="media tm-related-post">
+                                          <div class="media-left media-middle">
+                                            <a href="#">
+                                              <img class="media-object" src="img/tm-img-240x120-2.jpg" alt="Generic placeholder image">
+                                            </a>
+                                          </div>
+                                          <div class="media-body">
+                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
+                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
+                                          </div>
+                                        </div>
+                                        <div class="media tm-related-post">
+                                          <div class="media-left media-middle">
+                                            <a href="#">
+                                              <img class="media-object" src="img/tm-img-240x120-3.jpg" alt="Generic placeholder image">
+                                            </a>
+                                          </div>
+                                          <div class="media-body">
+                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
+                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div> <!-- row -->
+
+            </div>
+        </section>
         
-        <!-- mine -->
-        <link href="css/adds.css" rel="stylesheet">
-        <script type="text/javascript" src="js/mine.js"></script>        
-    </head>
+        <footer class="tm-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        
+                        <div class="tm-footer-content-box">
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Proin eu posuere felis</h3>
+                            <div class="tm-gray-bg">
+                                <p>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</p>
+                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
+                                <p><strong>Danny Egg (Executive)</strong></p>    
+                            </div>    
+                        </div>
+                                                
+                    </div>
 
-<body id="home" data-spy="scroll" data-target="#myNav" data-offset="55">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <div class="tm-footer-content-box tm-footer-links-container">
+                        
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Nulla tortor dolor</h3>
+                            <nav>
+                                <ul class="nav">
+                                    <li><a href="#" class="tm-footer-link">Tincidunt non faucibus</a></li>
+                                    <li><a href="#" class="tm-footer-link">Vestibulum tempor</a></li>
+                                    <li><a href="#" class="tm-footer-link">Fusce non turpis euismod</a></li>
+                                    <li><a href="#" class="tm-footer-link">Lorem ipsum dolor sit</a></li>
+                                    <li><a href="#" class="tm-footer-link">Nam in augue consectetur</a></li>
+                                    <li><a href="#" class="tm-footer-link">Text Link Color #CCCC66</a></li>
+                                </ul>
+                            </nav>
 
-<nav id="myNav"class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand page-scroll" href="#home">LibRec</a>
-    </div>
+                        </div>
+                        
+                    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown active">          
-          <a href="#" class="dropdown-toggle caret-after" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-home"></span> Home<span class="caret"></span></a> 
-          <ul class="dropdown-menu" role="menu">           
-            <li><a class="page-scroll" href="#overview">Overview</a></li>
-            <li><a class="page-scroll" href="#features">Features</a></li>
-            <li><a class="page-scroll" href="#apps">Applications</a></li>
-            <li><a class="page-scroll" href="#contacts">Contacts</a></li>
-          </ul>
-        </li>
-        <li><a href="./download.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
-        <li><a href="http://wiki.librec.net/"><span class="glyphicon glyphicon-fire"></span> Documentation</a></li>  
-        <li class="dropdown" style="margin-left:-15px;">          
-          <a href="#" class="dropdown-toggle caret-after" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a> 
-          <ul class="dropdown-menu" role="menu"> 
-            <li><a href="http://librec.net/doc/librec-v2.0/">API Documents</a></li>
-          </ul>
-        </li>             
-        <li><a href="./datasets.html"><span class="glyphicon glyphicon-list"></span> Datasets</a></li>
-        <li><a href="./community.html"><span class="glyphicon glyphicon-user"></span> Community</a></li>
-<!--         <li><a href="./developers.html">Developers</a></li> -->
-<!--        <li><a href="./cn/index.html">中文</a></li> -->
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+                    <!-- Add the extra clearfix for only the required viewport 
+                        http://stackoverflow.com/questions/24590222/bootstrap-3-grid-with-different-height-in-each-item-is-it-solvable-using-only
+                    -->
+                    <div class="clearfix hidden-lg-up"></div>
 
-<header>
-<div class="container">
-<!-- <span class="brand">LibRec</span> -->
-<img src="images/logo-white.png" height="158" width="298"/>
-<p style="font-size:16px; font-family:'Courier New', Courier, monospace">Exploration makes surprise</p>
-<h1>A Java Library for Recommender Systems</h1>
-<iframe src="https://ghbtns.com/github-btn.html?user=guoguibing&repo=librec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
-<iframe src="https://ghbtns.com/github-btn.html?user=guoguibing&repo=librec&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-</div>
-</header>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
+                        <div class="tm-footer-content-box">
+                        
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Etiam mollis ornare</h3>
+                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
+                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
+                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
+                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Read More</a>
 
-<!-- main content -->
-<div class="container">
-<div class="basic intro">
-<h1 id="overview">Overview</h1>
-<p class="center-block">
-Recommender systems have been well recognized as a typical application of Big Data and Machine Learning. LibRec is a GPL-licensed Java library  (Java version 1.7+ required), aiming to solve two classic tasks in recommender systems, i.e.,<span style="color:#96F; font-weight:bold;"> <a href="./example.html">rating prediction</a></span> and <span style="color:#96F; font-weight:bold;"><a href="./example.html#ranking">item ranking</a></span>  by implementing a suite of state-of-the-art recommendation algorithms.
+                        </div>
+                        
+                    </div>
 
-It has been listed by the RecSys Wiki (see the <a href="http://www.recsyswiki.com/wiki/LibRec">LibRec page</a>). <br>
-</p>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
+                        <div class="tm-footer-content-box">
+                        
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Fusce non turpis</h3>
+                            <div class="tm-margin-b-30">
+                                <img src="img/tm-img-100x100-1.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="img/tm-img-100x100-2.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="img/tm-img-100x100-3.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="img/tm-img-100x100-4.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="img/tm-img-100x100-5.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="img/tm-img-100x100-6.jpg" alt="Image" class="tm-footer-thumbnail">
+                            </div>
+                            <p class="tm-margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
+                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Browse</a>
 
-
-
-<div class="center-block row">    
-	
-	
-<table  style="border: 0;">
-
-	<tbody>
-		<tr>
-			<td><img src="images/modules.jpg" alt="LibRec Modules" width="600" height="358" class="img-responsive" style="display:block; margin:auto; padding-bottom:15px;"></td>
-			<td><br/><img src="images/procedure.jpg" alt="LibRec Modules" width="600" height="358" class="img-responsive" style="display:block; margin:auto; padding-bottom:15px;"></td>
-		</tr>
-		<tr >
-			<td><p class="center-block">Fig.1 LibRec Modules</p></td>
-			<td><p class="center-block">Fig.2 LibRec Processing Flow</p></td>
-		</tr>
-	</tbody>
-</table>
-	
-</div>
+                        </div>
+                        
+                    </div>
 
 
+                </div>
 
+                <div class="row">
+                    <div class="col-xs-12 tm-copyright-col">
+                        <p class="tm-copyright-text">注脚</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-<!-- <p class="center-block"><img src="images/librec.png" alt="LibRec Class Structure" width="90%" height="90%" class="img-responsive" style="display:block; margin:auto;">
-Fig.2 Structure of Recommendation Models
-</p> -->
-<hr class="small">
-
-<h1 id="features">Features</h1>
-<div class="center-block row">    
-    <div class="col-md-1">&nbsp;</div>
-    <div class="col-md-5">
-        <div class="panel panel-primary">
-        <div class="panel-heading">Rich Algorithms</div>
-        <div class="panel-body">
-         More than 70 recommendation algorithms have been implemented, and more will be  added in the LibRec. 
-        </div>
-        </div>
-    </div>
-    <div class="col-md-5">
-        <div class="panel panel-primary">
-        <div class="panel-heading">Module Composition</div>
-        <div class="panel-body">
-        LibRec has six main components including data split, conversion, similarity, algorithms, evaluators and filters. </div>
-        </div>
-    </div>
-</div>
-<div class="center-block row">    
-    <div class="col-md-1">&nbsp;</div>
-    <div class="col-md-5">
-        <div class="panel panel-info">
-        <div class="panel-heading">Flexible Configuration</div>
-        <div class="panel-body">
-        LibRec is based on low coupling, flexible and either external textual or internal API configuration. </div>
-        </div>
-    </div>
-    <div class="col-md-5">
-        <div class="panel panel-info">
-        <div class="panel-heading">High Performance</div>
-        <div class="panel-body">
-        LibRec has more efficient implementations than other counterparts while producing comparable  accuracy.
-        </div>
-        </div>
-    </div>
-</div>
-<div class="center-block row">    
-    <div class="col-md-1">&nbsp;</div>
-    <div class="col-md-5">
-        <div class="panel panel-default">
-        <div class="panel-heading">Simple Usage</div>
-        <div class="panel-body">
-        LibRec can get executed in a few lines of codes, and a number of demos are provided for easy start. </div>
-        </div>
-    </div>
-    <div class="col-md-5">
-        <div class="panel panel-default">
-        <div class="panel-heading">Easy Expansion</div>
-        <div class="panel-body">LibRec provides a set of recommendation interfaces for easy expansion to implement new recommenders. </div>
-        </div>
-    </div>
-</div>
-<hr class="small">
-
-<h1 id="apps">Application</h1>
-<div class="center-block row">    
-    <div class="col-md-1">&nbsp;</div>
-    <div class="col-md-10">
-        <div class="panel panel-default">
-        <div class="panel-heading">Research Publications</div>
-        <div class="panel-body">
-        <p>A number of papers adopting LibRec can be found here. </p>
-        	<ul class="list-group">
-            <li class="list-group-item">Guibing Guo, Jie Zhang, Zhu Sun and Neil Yorke-Smith, LibRec: A Java Library for Recommender Systems, in Posters, Demos, Late-breaking Results and Workshop Proceedings of the 23rd Conference on User Modelling, Adaptation and Personalization (UMAP), 2015.</li>
-            <li class="list-group-item">G. Guo, J. Zhang and N. Yorke-Smith, TrustSVD: Collaborative Filtering with Both the Explicit and Implicit Influence of User Trust and of Item Ratings, in Proceedings of the 29th AAAI Conference on Artificial Intelligence (AAAI), 2015, 123-129.</li>
-            </ul>        
-        </div>
-        </div>
-    </div>
-</div>
-<div class="center-block row">    
-    <div class="col-md-1">&nbsp;</div>
-    <div class="col-md-10">
-        <div class="panel panel-default">
-        <div class="panel-heading">Industrial Application</div>
-        <div class="panel-body">
-        Please contact us for an industrial application of LibRec via <a href="mailto:guogb@swc.neu.edu.cn"> guogb@swc.neu.edu.cn</a> </div>
-        </div>
-    </div>
-</div>
-</div>
-</div> <!-- End of Main Content -->
-
-<footer id="footer" style="background-color:#222222;  ;">
-	<div class="container-center">
-		
-		<div class="center-block row" style="height: 140px;">    
-		    <div class="col-md-4">		   
-		        <div style="text-align:center ;margin-top: 55px;float: right;" ><font color="#888888">For those who prefer to chat via Gitter: </font></div>     
-		    </div>
-		    <div class="col-md-2" >		
-		    	<div style="text-align:center ;margin-top: 55px;float:left"><a href="https://gitter.im/librec/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="images/gitter.jpg"></a>		   </div>
-		    </div>
-		    	
-		    <div class="col-md-1">
-		    	
-		        <div style="background-color:#888888; height: 100px;width:2px; 	margin-top: 20px;"></div>
-		    </div>
-		    <div class="col-md-3">
-		    <div style="text-align:center; margin-top: 55px;float: left"><font color="#888888">For those who prefer to chat via WeChat:</font></div>
-      		</div>
-      		<div class="col-md-2">
-      			<div style="margin-top: 15px;float:left"><img src="images/mp.jpg" height="110px" width="110px"></div>
-       			
-      		</div>
-		</div>
-	</div>
-</footer>
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
+        <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+       
 </body>
 </html>
