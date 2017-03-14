@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LibRec - A Java Library for Recommender Systems</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="js/jquery-1.11.2.min.js"></script>
+   		<!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="js/bootstrap.min.js"></script>
+    
+    	<!-- plugins -->
+		<link rel="stylesheet" type="text/css" href="css/table.css" />
+		<link rel="shortcut icon" href="images/network.ico" />
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        
+        <!-- mine -->
+        <link href="css/adds.css" rel="stylesheet">
+        <script type="text/javascript" src="js/mine.js"></script>        
+    </head>
+
+<body id="home" data-spy="scroll" data-target="#myNav" data-offset="55">
+
+<nav id="myNav"class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="#home">LibRec</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown active">          
+          <a href="#" class="dropdown-toggle caret-after" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-home"></span> Home<span class="caret"></span></a> 
+          <ul class="dropdown-menu" role="menu">           
+            <li><a class="page-scroll" href="#overview">Overview</a></li>
+            <li><a class="page-scroll" href="#features">Features</a></li>
+            <li><a class="page-scroll" href="#apps">Applications</a></li>
+            <li><a class="page-scroll" href="#contacts">Contacts</a></li>
+          </ul>
+        </li>
+        <li><a href="./download.html"><span class="glyphicon glyphicon-download-alt"></span> Download</a></li>
+        <li><a href="http://wiki.librec.net/"><span class="glyphicon glyphicon-fire"></span> Documentation</a></li>  
+        <li class="dropdown" style="margin-left:-15px;">          
+          <a href="#" class="dropdown-toggle caret-after" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a> 
+          <ul class="dropdown-menu" role="menu"> 
+            <li><a href="http://librec.net/doc/librec-v2.0/">API Documents</a></li>
+          </ul>
+        </li>             
+        <li><a href="./datasets.html"><span class="glyphicon glyphicon-list"></span> Datasets</a></li>
+        <li><a href="./community.html"><span class="glyphicon glyphicon-user"></span> Community</a></li>
+<!--         <li><a href="./developers.html">Developers</a></li> -->
+<!--        <li><a href="./cn/index.html">中文</a></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<header>
+<div class="container">
+<!-- <span class="brand">LibRec</span> -->
+<img src="images/logo-white.png" height="158" width="298"/>
+<p style="font-size:16px; font-family:'Courier New', Courier, monospace">Exploration makes surprise</p>
+<h1>A Java Library for Recommender Systems</h1>
+<iframe src="https://ghbtns.com/github-btn.html?user=guoguibing&repo=librec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="150px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=guoguibing&repo=librec&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+</div>
+</header>
+
+
+<!-- main content -->
+<div class="container">
+<div class="basic intro">
+<h1 id="overview">Overview</h1>
+<p class="center-block">
+Recommender systems have been well recognized as a typical application of Big Data and Machine Learning. LibRec is a GPL-licensed Java library  (Java version 1.7+ required), aiming to solve two classic tasks in recommender systems, i.e.,<span style="color:#96F; font-weight:bold;"> <a href="./example.html">rating prediction</a></span> and <span style="color:#96F; font-weight:bold;"><a href="./example.html#ranking">item ranking</a></span>  by implementing a suite of state-of-the-art recommendation algorithms.
+
+It has been listed by the RecSys Wiki (see the <a href="http://www.recsyswiki.com/wiki/LibRec">LibRec page</a>). <br>
+</p>
+
+
+
+
+<div class="center-block row">    
+	
+	
+<table  style="border: 0;">
+
+	<tbody>
+		<tr>
+			<td><img src="images/modules.jpg" alt="LibRec Modules" width="600" height="358" class="img-responsive" style="display:block; margin:auto; padding-bottom:15px;"></td>
+			<td><br/><img src="images/procedure.jpg" alt="LibRec Modules" width="600" height="358" class="img-responsive" style="display:block; margin:auto; padding-bottom:15px;"></td>
+		</tr>
+		<tr >
+			<td><p class="center-block">Fig.1 LibRec Modules</p></td>
+			<td><p class="center-block">Fig.2 LibRec Processing Flow</p></td>
+		</tr>
+	</tbody>
+</table>
+	
+</div>
+
+
+
+
+<!-- <p class="center-block"><img src="images/librec.png" alt="LibRec Class Structure" width="90%" height="90%" class="img-responsive" style="display:block; margin:auto;">
+Fig.2 Structure of Recommendation Models
+</p> -->
+<hr class="small">
+
+<h1 id="features">Features</h1>
+<div class="center-block row">    
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-5">
+        <div class="panel panel-primary">
+        <div class="panel-heading">Rich Algorithms</div>
+        <div class="panel-body">
+         More than 70 recommendation algorithms have been implemented, and more will be  added in the LibRec. 
+        </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="panel panel-primary">
+        <div class="panel-heading">Module Composition</div>
+        <div class="panel-body">
+        LibRec has six main components including data split, conversion, similarity, algorithms, evaluators and filters. </div>
+        </div>
+    </div>
+</div>
+<div class="center-block row">    
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-5">
+        <div class="panel panel-info">
+        <div class="panel-heading">Flexible Configuration</div>
+        <div class="panel-body">
+        LibRec is based on low coupling, flexible and either external textual or internal API configuration. </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="panel panel-info">
+        <div class="panel-heading">High Performance</div>
+        <div class="panel-body">
+        LibRec has more efficient implementations than other counterparts while producing comparable  accuracy.
+        </div>
+        </div>
+    </div>
+</div>
+<div class="center-block row">    
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-5">
+        <div class="panel panel-default">
+        <div class="panel-heading">Simple Usage</div>
+        <div class="panel-body">
+        LibRec can get executed in a few lines of codes, and a number of demos are provided for easy start. </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="panel panel-default">
+        <div class="panel-heading">Easy Expansion</div>
+        <div class="panel-body">LibRec provides a set of recommendation interfaces for easy expansion to implement new recommenders. </div>
+        </div>
+    </div>
+</div>
+<hr class="small">
+
+<h1 id="apps">Application</h1>
+<div class="center-block row">    
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-10">
+        <div class="panel panel-default">
+        <div class="panel-heading">Research Publications</div>
+        <div class="panel-body">
+        <p>A number of papers adopting LibRec can be found here. </p>
+        	<ul class="list-group">
+            <li class="list-group-item">Guibing Guo, Jie Zhang, Zhu Sun and Neil Yorke-Smith, LibRec: A Java Library for Recommender Systems, in Posters, Demos, Late-breaking Results and Workshop Proceedings of the 23rd Conference on User Modelling, Adaptation and Personalization (UMAP), 2015.</li>
+            <li class="list-group-item">G. Guo, J. Zhang and N. Yorke-Smith, TrustSVD: Collaborative Filtering with Both the Explicit and Implicit Influence of User Trust and of Item Ratings, in Proceedings of the 29th AAAI Conference on Artificial Intelligence (AAAI), 2015, 123-129.</li>
+            </ul>        
+        </div>
+        </div>
+    </div>
+</div>
+<div class="center-block row">    
+    <div class="col-md-1">&nbsp;</div>
+    <div class="col-md-10">
+        <div class="panel panel-default">
+        <div class="panel-heading">Industrial Application</div>
+        <div class="panel-body">
+        Please contact us for an industrial application of LibRec via <a href="mailto:guogb@swc.neu.edu.cn"> guogb@swc.neu.edu.cn</a> </div>
+        </div>
+    </div>
+</div>
+</div>
+</div> <!-- End of Main Content -->
+
+<footer id="footer" style="background-color:#222222;  ;">
+	<div class="container-center">
+		
+		<div class="center-block row" style="height: 140px;">    
+		    <div class="col-md-4">		   
+		        <div style="text-align:center ;margin-top: 55px;float: right;" ><font color="#888888">For those who prefer to chat via Gitter: </font></div>     
+		    </div>
+		    <div class="col-md-2" >		
+		    	<div style="text-align:center ;margin-top: 55px;float:left"><a href="https://gitter.im/librec/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="images/gitter.jpg"></a>		   </div>
+		    </div>
+		    	
+		    <div class="col-md-1">
+		    	
+		        <div style="background-color:#888888; height: 100px;width:2px; 	margin-top: 20px;"></div>
+		    </div>
+		    <div class="col-md-3">
+		    <div style="text-align:center; margin-top: 55px;float: left"><font color="#888888">For those who prefer to chat via WeChat:</font></div>
+      		</div>
+      		<div class="col-md-2">
+      			<div style="margin-top: 15px;float:left"><img src="images/mp.jpg" height="110px" width="110px"></div>
+       			
+      		</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
